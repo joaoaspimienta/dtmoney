@@ -22,7 +22,7 @@ interface TransactionsContextData {
 }
 
 export const TransactionsContext = createContext<TransactionsContextData>(
-  {} as TransactionsContextData
+  {}
 );
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {

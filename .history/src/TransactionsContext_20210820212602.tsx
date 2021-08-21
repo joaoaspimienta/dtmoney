@@ -21,9 +21,7 @@ interface TransactionsContextData {
   createTransaction: (transaction: TransactionInput) => void;
 }
 
-export const TransactionsContext = createContext<TransactionsContextData>(
-  {} as TransactionsContextData
-);
+export const TransactionsContext = createContext<TransactionsContextData>([]);
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
